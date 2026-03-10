@@ -147,7 +147,7 @@ python rescue_simulation.py --stats-only
 - `visualize_rescue.py` - Visualization tools
 
 ### Documentation Files
-- `README_RESCUE.md` - Complete documentation (500+ lines)
+- `README.md` - Main project documentation
 - `QUICKSTART.md` - Quick start guide
 - `SYSTEM_OVERVIEW.md` - System architecture
 - `IMPLEMENTATION_SUMMARY.md` - This file
@@ -288,7 +288,7 @@ Required packages (specified in `requirements_rescue.txt`):
 
 ## Documentation
 
-- 📖 **Full Documentation**: `README_RESCUE.md`
+- 📖 **Main Documentation**: `README.md`
 - 🚀 **Quick Start**: `QUICKSTART.md`
 - 🏗️ **Architecture**: `SYSTEM_OVERVIEW.md`
 - ✅ **This Summary**: `IMPLEMENTATION_SUMMARY.md`

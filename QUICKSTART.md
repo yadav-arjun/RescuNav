@@ -224,7 +224,7 @@ Edit the configuration files:
 
 ### Advanced Usage
 
-See [README_RESCUE.md](README_RESCUE.md) for:
+See [SYSTEM_OVERVIEW.md](SYSTEM_OVERVIEW.md) for:
 - Detailed architecture
 - Database schema
 - Component APIs
@@ -280,7 +280,7 @@ python visualize_rescue.py <mission_id>
 
 ## Getting Help
 
-- Read detailed docs: [README_RESCUE.md](README_RESCUE.md)
+- Read detailed docs: [SYSTEM_OVERVIEW.md](SYSTEM_OVERVIEW.md)
 - Run component tests: `python tests/run_all_tests.py`
 - Check individual modules: `python <module_name>.py`
 

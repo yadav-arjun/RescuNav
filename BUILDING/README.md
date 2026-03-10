@@ -318,8 +318,8 @@ building_dev/BUILDING/
 ├── mcp_server.py           ← Main MCP server
 ├── mcp_config.json         ← MCP server configuration
 ├── example_client.py       ← Usage examples
-├── README.md               ← This file
-└── DOCUMENTATION.md        ← Complete guide
+├── README.md               ← This file (complete guide)
+└── QUICK_REFERENCE.md      ← Quick command reference
 ```
 
 ---
@@ -402,7 +402,7 @@ pip install ai2thor pyvista numpy opencv-python
 ## Next Steps
 
 1. **Run examples:** `python example_client.py`
-2. **Read full docs:** [DOCUMENTATION.md](DOCUMENTATION.md)
+2. **Read full docs:** See this README for complete documentation
 3. **Integrate with MCP client:** Use tools in your application
 4. **Customize:** Modify movement increments, add new tools
 
@@ -445,4 +445,4 @@ python create_4story_advanced.py
 
 **Ready to navigate!** 🏢🏠
 
-For complete documentation, see [DOCUMENTATION.md](DOCUMENTATION.md)
+For complete documentation, see this README file above.

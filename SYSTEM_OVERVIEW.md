@@ -63,7 +63,7 @@ A comprehensive AI agent system for emergency rescue simulations that uses:
 | File | Description |
 |------|-------------|
 | `requirements_rescue.txt` | Python dependencies |
-| `README_RESCUE.md` | Complete system documentation |
+| `README.md` | Main project documentation |
 | `QUICKSTART.md` | Quick start guide |
 | `SYSTEM_OVERVIEW.md` | This file |
 | `tests/run_all_tests.py` | Component testing suite |

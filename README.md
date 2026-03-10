@@ -12,6 +12,7 @@ RescuNav is an AI-powered emergency rescue simulation system that uses machine l
 
 ## 📚 **Quick Links**
 
+- 🎥 **[Watch Demo Video](https://youtu.be/-NdRGTOABeU?si=OtGgGsycr5FVtY7Y)** - See RescuNav in action
 - 🚀 **[Quick Start Guide](QUICKSTART.md)** - Get started in 5 minutes
 - 📖 **[How to Run](HOW_TO_RUN.md)** - Complete command reference
 - ⚡ **[Quick Commands](QUICK_COMMANDS.md)** - Copy-paste commands
@@ -82,6 +83,11 @@ Our system has achieved impressive results:
 ---
 
 ## 🎬 Demo
+
+### 🎥 Watch the Prototype in Action
+[![RescuNav Demo](https://img.shields.io/badge/▶️_Watch_Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://youtu.be/-NdRGTOABeU?si=OtGgGsycr5FVtY7Y)
+
+**Video Link:** https://youtu.be/-NdRGTOABeU?si=OtGgGsycr5FVtY7Y
 
 ### Features
 - 🌐 Interactive Web Interface

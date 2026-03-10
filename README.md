@@ -10,6 +10,15 @@ RescuNav is an AI-powered emergency rescue simulation system that uses machine l
 
 ---
 
+## 📚 **Quick Links**
+
+- 🚀 **[Quick Start Guide](QUICKSTART.md)** - Get started in 5 minutes
+- 📖 **[How to Run](HOW_TO_RUN.md)** - Complete command reference
+- ⚡ **[Quick Commands](QUICK_COMMANDS.md)** - Copy-paste commands
+- 🏗️ **[System Overview](SYSTEM_OVERVIEW.md)** - Architecture details
+
+---
+
 ## 🎯 Key Features
 
 - 🔥 **Video Analysis** - Real-time fire detection using Fireworks AI
@@ -23,6 +32,12 @@ RescuNav is an AI-powered emergency rescue simulation system that uses machine l
 ---
 
 ## 🚀 Quick Start
+
+**New to RescuNav? Start here:**
+
+👉 **[Read the Quick Start Guide](QUICKSTART.md)** - 5-minute setup
+
+👉 **[See All Commands](HOW_TO_RUN.md)** - Complete reference
 
 ### Prerequisites
 
@@ -156,6 +171,8 @@ Test AI algorithms and multi-agent coordination in controlled environments.
 
 ## 🚀 Usage Examples
 
+**For detailed commands and options, see [HOW_TO_RUN.md](HOW_TO_RUN.md)**
+
 ### Run Fire Scenario
 ```bash
 python rescue_simulation.py --scenario fire --iterations 10 --agents 3
@@ -202,29 +219,6 @@ rescunav/
 ```
 
 ---
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 🙏 Acknowledgments
-
-- [Fireworks AI](https://fireworks.ai/) for video analysis API
-- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for cloud database
-- [PyVista](https://pyvista.org/) for 3D visualization
-- Open source Python community
-
----
-
-## 📞 Contact
 
 **Project:** RescuNav  
 **Team:** Lottery Ticket Loser 

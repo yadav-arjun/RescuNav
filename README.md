@@ -148,8 +148,6 @@ Improved Performance
 - [Quick Start Guide](QUICKSTART.md) - Get started quickly
 - [System Overview](SYSTEM_OVERVIEW.md) - Architecture details
 - [Implementation Summary](IMPLEMENTATION_SUMMARY.md) - What was built
-- [Web UI Guide](WEB_UI_README.md) - Web interface documentation
-- [Rescue System Details](README_RESCUE.md) - Technical documentation
 
 ---
 

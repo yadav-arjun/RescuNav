@@ -1,0 +1,32 @@
+# Emergency Response AI Agent System Requirements
+
+# Core ML/AI
+nemo-toolkit[all]>=1.23.0
+torch>=2.0.0
+transformers>=4.30.0
+
+# 3D Processing
+trimesh>=4.0.0
+numpy>=1.24.0
+scipy>=1.11.0
+networkx>=3.1
+
+# Pathfinding & Navigation
+scikit-learn>=1.3.0
+matplotlib>=3.7.0
+
+# Database
+pymongo>=4.6.0
+motor>=3.3.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+pyyaml>=6.0
+
+# Visualization
+plotly>=5.18.0
+opencv-python>=4.8.0
+
+# Existing dependencies
+requests>=2.31.0

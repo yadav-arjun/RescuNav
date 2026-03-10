@@ -1,0 +1,122 @@
+===============================================================================
+RESCUNAV - QUICK START GUIDE
+===============================================================================
+
+CURRENT STATUS:
+✓ Python 3.11.9 installed
+✓ numpy, scipy, matplotlib, requests installed
+✗ networkx, pymongo, flask, opencv-python, python-dotenv MISSING
+✗ API keys NOT configured
+
+===============================================================================
+OPTION 1: MINIMAL SETUP (5 minutes) - Get Basic Features Working
+===============================================================================
+
+Step 1: Install core dependency
+    pip install networkx
+
+Step 2: Test it
+    python building_navigator.py
+    python danger_simulator.py
+
+What works: Building navigation, danger simulation
+What doesn't: Web UI, database, video analysis
+
+===============================================================================
+OPTION 2: STANDARD SETUP (10 minutes) - RECOMMENDED
+===============================================================================
+
+Step 1: Install all core dependencies
+    pip install networkx pymongo flask opencv-python python-dotenv
+
+Step 2: Check setup
+    python check_setup.py
+
+Step 3: Run tests
+    python tests/run_all_tests.py
+
+Step 4: Try simulation
+    python rescue_simulation.py --scenario fire --iterations 3
+
+Step 5: Start web UI
+    python web_app.py
+    Open: http://localhost:5000
+
+What works: Everything except video analysis and database learning
+What doesn't: Video analysis (needs API key), database (needs MongoDB)
+
+===============================================================================
+OPTION 3: FULL SETUP (30 minutes) - All Features
+===============================================================================
+
+Step 1: Install everything
+    pip install -r requirements_rescue.txt
+
+Step 2: Get Fireworks AI API key
+    - Go to: https://fireworks.ai/
+    - Sign up (free)
+    - Get API key
+    - Edit .env file: FIREWORKS_API_KEY=your_key_here
+
+Step 3: Get MongoDB Atlas
+    - Go to: https://cloud.mongodb.com/
+    - Sign up (free)
+    - Create cluster
+    - Get connection string
+    - Edit .env file: MONGODB_URI=your_connection_string
+
+Step 4: Test everything
+    python tests/run_all_tests.py
+
+Step 5: Run full simulation
+    python rescue_simulation.py --scenario fire --video main.mp4 --iterations 10
+
+What works: EVERYTHING!
+
+===============================================================================
+QUICK COMMANDS
+===============================================================================
+
+Check what's installed:
+    python check_setup.py
+
+Install core dependencies:
+    pip install networkx pymongo flask opencv-python python-dotenv
+
+Run tests:
+    python tests/run_all_tests.py
+
+Run simulation:
+    python rescue_simulation.py --scenario fire --iterations 3
+
+Start web UI:
+    python web_app.py
+
+===============================================================================
+TROUBLESHOOTING
+===============================================================================
+
+Error: "ModuleNotFoundError: No module named 'networkx'"
+Fix: pip install networkx
+
+Error: "ModuleNotFoundError: No module named 'flask'"
+Fix: pip install flask
+
+Error: "ModuleNotFoundError: No module named 'pymongo'"
+Fix: pip install pymongo
+
+Error: "ModuleNotFoundError: No module named 'cv2'"
+Fix: pip install opencv-python
+
+===============================================================================
+RECOMMENDED: Start with Option 2 (Standard Setup)
+===============================================================================
+
+Copy and paste this:
+
+pip install networkx pymongo flask opencv-python python-dotenv
+python check_setup.py
+python tests/run_all_tests.py
+python rescue_simulation.py --scenario fire --iterations 3
+
+===============================================================================

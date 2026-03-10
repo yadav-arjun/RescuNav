@@ -1,0 +1,151 @@
+# ===================================
+# RescuNav - Git Ignore File
+# ===================================
+
+# CRITICAL: Environment variables with API keys
+.env
+.env.local
+.env.*.local
+*.env
+
+# API Keys and Secrets
+*_api_key.txt
+secrets.txt
+config_private.py
+
+# ===================================
+# Python
+# ===================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ===================================
+# Virtual Environment
+# ===================================
+venv/
+ENV/
+env/
+.venv
+
+# ===================================
+# Database Files
+# ===================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ===================================
+# Large Media Files
+# ===================================
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+
+# Specific large files
+main.mp4
+jsonl_training/bench11.mp4
+
+# Large 3D files (optional - uncomment if you want to exclude)
+# *.vtk
+# *.stl
+# *.ply
+
+# ===================================
+# IDE and Editor Files
+# ===================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# ===================================
+# Operating System Files
+# ===================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===================================
+# Logs and Temporary Files
+# ===================================
+*.log
+logs/
+temp/
+tmp/
+*.tmp
+*.bak
+*.cache
+
+# ===================================
+# Testing Files (optional)
+# ===================================
+test_*.py
+*_test.py
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===================================
+# Documentation Build Files
+# ===================================
+docs/_build/
+site/
+
+# ===================================
+# Jupyter Notebooks
+# ===================================
+.ipynb_checkpoints
+*.ipynb
+
+# ===================================
+# Package Files
+# ===================================
+*.tar.gz
+*.zip
+*.rar
+
+# ===================================
+# Node modules (if any)
+# ===================================
+node_modules/
+package-lock.json
+
+# ===================================
+# Backup Files
+# ===================================
+*~
+*.backup
+*.old

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RescuNav - AI Rescue Simulation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RescuNav</h1>
+            <p>AI-Powered Emergency Rescue Simulation</p>
+        </header>
+
+        <div class="main-content">
+            <div class="left-panel">
+                <!-- Step 1: Video Upload -->
+                <div class="step" id="step1">
+                    <h2>📹 Step 1: Upload Video</h2>
+                    <div class="upload-area" id="uploadArea">
+                        <input type="file" id="videoFile" accept="video/*" style="display: none;">
+                        <div class="upload-placeholder" id="uploadPlaceholder" onclick="document.getElementById('videoFile').click()">
+                            <div class="upload-icon">📤</div>
+                            <p>Click to select video file</p>
+                            <small>Supports MP4, MOV, AVI</small>
+                        </div>
+                        <div class="upload-progress" id="uploadProgress" style="display: none;">
+                            <div class="spinner"></div>
+                            <p>Uploading video...</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                        </div>
+                        <div class="upload-success" id="uploadSuccess" style="display: none;">
+                            <div class="success-icon">✅</div>
+                            <p>Video uploaded: <strong>main.mp4</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Start Simulation -->
+                <div class="step" id="step2" style="opacity: 0.5; pointer-events: none;">
+                    <h2>🚀 Step 2: Start Rescue Simulation</h2>
+                    <button class="btn-primary" id="startBtn" onclick="startSimulation()">
+                        Start Simulation
+                    </button>
+                    <p class="step-desc">Fire scenario · 3 iterations · 2 AI agents</p>
+                </div>
+
+                <!-- Step 3: Visualization -->
+                <div class="step" id="step3" style="opacity: 0.5; pointer-events: none;">
+                    <h2>🔥 Step 3: Building Simulation</h2>
+                    <div class="viz-container">
+                        <canvas id="buildingCanvas" width="600" height="400"></canvas>
+                    </div>
+                    <div class="viz-controls">
+                        <button class="btn-secondary" onclick="toggleAnimation()">⏸️ Pause</button>
+                        <button class="btn-secondary" onclick="resetAnimation()">🔄 Reset</button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Agent Paths -->
+                <div class="step" id="step4" style="opacity: 0.5; pointer-events: none;">
+                    <h2>🎯 Step 4: Agent Rescue Paths</h2>
+                    <div class="viz-container">
+                        <canvas id="agentCanvas" width="600" height="400"></canvas>
+                    </div>
+                    <div class="agent-stats" id="agentStats"></div>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <h2>📋 Simulation Logs</h2>
+                <div class="log-container" id="logContainer">
+                    <div class="log-entry log-info">Waiting for simulation to start...</div>
+                </div>
+                <button class="btn-secondary btn-block" onclick="clearLogs()">Clear Logs</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

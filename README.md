@@ -106,6 +106,10 @@ Then open: http://localhost:5000
 
 ## 🏗️ Architecture
 
+![RescuNav Architecture Diagram](./drawio%20rescue%20nav%20main%20archit.png)
+
+**System Flow:**
+
 ```
 Video Analysis (Fireworks AI)
     ↓

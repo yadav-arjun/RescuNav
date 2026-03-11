@@ -20,6 +20,7 @@ Create a `.env` file with your credentials:
 # MongoDB Atlas (optional - system works without it but won't save learning data)
 MONGODB_URI=your_mongodb_connection_string
 MONGODB_DATABASE=building_analysis
+MONGODB_COLLECTION=video_analysis
 
 # Fireworks AI (optional - for video-based fire analysis)
 FIREWORKS_API_KEY=your_fireworks_api_key
@@ -156,46 +157,7 @@ python rescue_simulation.py --stats-only
 
 Shows all historical mission data without running new simulations.
 
-## What's Happening Under the Hood
 
-### 1. Building Setup
-- 4-story building with 20x20 grid per floor
-- Stairwells connecting floors
-- Child located on top floor (floor 3)
-- Agents start on ground floor (floor 0)
-
-### 2. Danger Simulation
-- **Fire**: Starts on lower floors, spreads over time, heat rises
-- **Attacker**: Patrols between floors 2-3 continuously
-
-### 3. Agent Planning
-- Agents use A* pathfinding to find routes
-- Avoid high-danger areas
-- Coordinate with other agents
-- Learn from previous failures
-
-### 4. Mission Execution
-- Agents navigate step-by-step
-- Dangers update in real-time
-- Agents take damage in dangerous areas
-- Dynamic replanning when needed
-
-### 5. Learning
-- Successful paths stored
-- Dangerous areas identified
-- Failure patterns analyzed
-- Next iteration improves strategy
-
-## Typical Learning Curve
-
-```
-Iteration 1: 0% success (no knowledge)
-Iteration 2: 0% success (learning dangerous areas)
-Iteration 3: 20% success (found one safe path)
-Iteration 4: 40% success (refined strategies)
-Iteration 5: 60% success (consistent success patterns)
-Iteration 10: 80% success (optimized paths)
-```
 
 ## Next Steps
 
@@ -230,34 +192,7 @@ See [SYSTEM_OVERVIEW.md](SYSTEM_OVERVIEW.md) for:
 - Component APIs
 - Advanced features
 
-## Troubleshooting
 
-### "No module named 'networkx'"
-```bash
-pip install networkx numpy scipy matplotlib
-```
-
-### "No path found!"
-- Dangers might be too severe
-- Try increasing number of agents
-- Check building configuration
-
-### "Mission Failed: timeout"
-- Increase max_time in simulation
-- Reduce danger intensity
-- Add more agents
-
-### MongoDB Connection Error
-- System works without MongoDB
-- Learning data won't persist
-- Set `MONGODB_URI` in `.env` to enable
-
-## Performance Tips
-
-1. **Faster Iterations**: Reduce `num_agents`
-2. **Better Success**: Increase `num_agents`
-3. **Quicker Learning**: Run more iterations
-4. **Detailed Analysis**: Enable database + visualization
 
 ## Example Workflow
 
@@ -296,7 +231,7 @@ python visualize_rescue.py <mission_id>
 
 ---
 
-**Ready to save the child? Run your first simulation now!**
+**Ready? Run your first simulation now!**
 
 ```bash
 python rescue_simulation.py --scenario fire --iterations 5

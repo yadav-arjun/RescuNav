@@ -49,14 +49,14 @@ A comprehensive AI agent system for emergency rescue simulations that uses:
 
 ### Core System Files
 
-| File | Description | Lines |
+| File | Description |
 |------|-------------|-------|
-| `building_navigator.py` | 3D building representation & pathfinding | ~400 |
-| `danger_simulator.py` | Fire spread & attacker movement | ~350 |
-| `nemo_rescue_agents.py` | AI agents with collaborative intelligence | ~450 |
-| `atlas_learning_db.py` | MongoDB integration for learning | ~400 |
-| `rescue_simulation.py` | Main simulation orchestrator | ~450 |
-| `visualize_rescue.py` | 3D/2D visualization system | ~350 |
+| `building_navigator.py` | 3D building representation & pathfinding |
+| `danger_simulator.py` | Fire spread & attacker movement |
+| `nemo_rescue_agents.py` | AI agents with collaborative intelligence |
+| `atlas_learning_db.py` | MongoDB integration for learning |
+| `rescue_simulation.py` | Main simulation orchestrator |
+| `visualize_rescue.py` | 3D/2D visualization system |
 
 ### Configuration & Documentation
 
@@ -82,18 +82,17 @@ A comprehensive AI agent system for emergency rescue simulations that uses:
 - **Graph structure**: 1600 nodes, 3000+ connections
 - **A* pathfinding**: Optimal routes with danger awareness
 - **Multi-floor navigation**: Stairwells connect floors
-- **Special locations**: Child (top floor), start (ground), exits
 
 ### 2. Danger Scenarios
 
-#### Fire Scenario
+#### Example Fire Scenario
 - Starts on lower floors (0-2)
 - Spreads over time (0.1 m/s)
 - Intensity increases (5%/second)
 - Heat rises to upper floors
 - Can use video analysis for realistic placement
 
-#### Attacker Scenario
+#### Example Attacker Scenario
 - Patrols between floors 2-3
 - 10 patrol points
 - 1.5 m/s movement speed

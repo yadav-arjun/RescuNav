@@ -157,22 +157,6 @@ Improved Performance
 
 ---
 
-## 🎯 Use Cases
-
-### 1. Fire Department Training
-Train rescue teams with realistic building fire scenarios before real emergencies.
-
-### 2. Building Safety Planning
-Test evacuation routes and identify safety weaknesses in building designs.
-
-### 3. Emergency Response Optimization
-Develop data-driven rescue strategies based on successful simulations.
-
-### 4. Research & Development
-Test AI algorithms and multi-agent coordination in controlled environments.
-
----
-
 ## 🚀 Usage Examples
 
 **For detailed commands and options, see [HOW_TO_RUN.md](HOW_TO_RUN.md)**

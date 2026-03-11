@@ -346,6 +346,7 @@ FIREWORKS_API_KEY=your_api_key_here
 # MongoDB Atlas (for learning persistence)
 MONGODB_URI=your_mongodb_connection_string
 MONGODB_DATABASE=building_analysis
+MONGODB_COLLECTION=video_analysis
 ```
 
 **Note:** System works without these - features will be limited but functional.

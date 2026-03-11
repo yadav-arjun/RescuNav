@@ -6,7 +6,7 @@
 
 > Transforming Emergency Response from Reactive Guesswork to Proactive Intelligence
 
-RescuNav is an AI-powered emergency rescue simulation system that uses machine learning, 3D navigation, and iterative learning to optimize rescue operations in life-threatening scenarios like building fires and active shooter situations.
+RescuNav is an AI-powered multi-agent emergency rescue system that uses machine learning, 3D simulation using depth estimation, computes optimal paths for first responders and iterative learning to optimize rescue operations in life-threatening scenarios like building fires and active shooter situations.
 
 ---
 
